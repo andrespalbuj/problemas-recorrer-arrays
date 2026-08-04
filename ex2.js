@@ -1,0 +1,15 @@
+// Ejercicio 2: Ingresos y retiradas de un banco
+const movimientosBanco = [500, -120, 300, -75, 250];
+let totalIngresos = 0;
+let totalRetiradas = 0;
+
+for (let i = 0; i < movimientosBanco.length; i++) {
+    if (movimientosBanco[i] > 0) {
+        totalIngresos += movimientosBanco[i];
+    } else {
+        totalRetiradas += movimientosBanco[i];
+    }
+}
+
+console.log("Total ingresos:", totalIngresos); // 1050
+console.log("Total retiradas:", totalRetiradas); // -195
