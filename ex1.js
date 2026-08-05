@@ -3,7 +3,7 @@ const puntuaciones = [8, 9, 7, 10, 9];
 let sumaPuntuaciones = 0;
 
 for (let i = 0; i < puntuaciones.length; i++) {
-    sumaPuntuaciones += puntuaciones[i];
+    // Suma cada uno de los elementos del array y acúmula la suma en la variable sumaPuntuaciones
 }
 
 const promedioNatacion = sumaPuntuaciones / puntuaciones.length;
