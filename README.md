@@ -2,6 +2,38 @@
 
 Este repositorio contiene ejercicios separados en `ex1.js`, `ex2.js`, `ex3.js` y `ex3b.js`.
 
+## ¿Cómo recorrer un array?
+
+```
+// La variable array de la que queremos obtener información
+let movimientos = [10, -5 , 1];
+
+// Se define FUERA del bucle. Variable para acumular el saldo
+let saldoFinalBucle = 0;
+
+for (let i=0; i<movimientos.length; i++) {
+    // Iteramos por cada una de las posiciones del array para ir acumulando en la variable saldoFinalBucle los ingresos y retiradas de mis movimientos bancarios
+    saldoFinalBucle = saldoFinalBucle + movimientos[i];
+}
+
+console.log("Saldo final del bucle: ", saldoFinalBucle);
+
+
+/** Contar ovejas */
+
+const animales = ["🐶", "🐑", "🐱"];
+
+let contadorOvejas = 0; 
+
+for (let i = 0; i < animales.length; i++) {
+    if (animales[i] == "🐑") {
+        contadorOvejas++; // contadorOvejas = contadorOvejas + 1;
+    }
+}
+
+console.log("Hay " + contadorOvejas + " ovejas");
+```
+
 ## Ejercicio 1: Puntuaciones de natación
 
 El nadador olímpico Pepe necesita calcular su promedio después de una ronda de competiciones. Recorre su lista de puntuaciones y averigua cuánto vale su media.
