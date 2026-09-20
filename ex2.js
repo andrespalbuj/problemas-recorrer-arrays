@@ -6,6 +6,11 @@ let totalRetiradas = 0;
 for (let i = 0; i < movimientosBanco.length; i++) {
    // ¿Cómo sabemos si un movimiento bancario es un ingreso o una retirada?
    // ¿Que variable hay que actualizar en cada caso?
+   if (movimientosBanco[i] > 0) {
+      totalIngresos += movimientosBanco[i];
+   } else {
+      totalRetiradas += movimientosBanco[i];
+   }
 }
 
 console.log("Total ingresos:", totalIngresos); // 1050

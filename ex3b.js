@@ -7,6 +7,13 @@ let enBlanco = 0;
 
 for (let i = 0; i < respuestasCorrectas.length; i++) {
    // ¿Cómo sabemos si una respuesta es correcta o incorrecta o la ha dejado en blanco?
+   if (respuestasAlumno[i] === "") {
+      enBlanco++;
+   } else if (respuestasAlumno[i] === respuestasCorrectas[i]) {
+      aciertos++;
+   } else {
+      fallos++;
+   }
 }
 
 console.log("Aciertos:", aciertos); // 2
